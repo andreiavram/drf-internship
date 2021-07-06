@@ -137,3 +137,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny'
     ]
 }
+
+try:
+    from .local_settings import *
+except ImportError as e:
+    pass
